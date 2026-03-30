@@ -1,0 +1,10 @@
+# igore dataset and outcome
+data/
+*.csv
+
+# ignore the model
+*.pth
+
+# ignore tmp file
+__pycache__/
+*.pyc
