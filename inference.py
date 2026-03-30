@@ -60,7 +60,7 @@ def build_model(num_classes: int) -> nn.Module:
 # Main Inference Logic
 # ==========================================
 def main():
-    print(f"🚀 Initializing inference pipeline on device: {DEVICE}")
+    print(f"Initializing inference pipeline on device: {DEVICE}")
 
     # 1. Fetch class names dynamically from train directory
     train_dir = os.path.join(DATA_DIR, 'train')
@@ -109,13 +109,13 @@ def main():
 
             for name, p in zip(names, preds):
                 image_id = os.path.splitext(name)[0]
-                pred_label = class_names[p.item()] # Using dynamically fetched class names
+                pred_label = class_names[p.item()]
                 results.append({"image_name": image_id, "pred_label": pred_label})
 
     # 5. Save to CSV
     output_csv = "prediction.csv"
     pd.DataFrame(results).to_csv(output_csv, index=False)
-    print(f"✅ {output_csv} successfully generated and ready for upload!")
+    print(f"{output_csv} successfully generated and ready for upload!")
 
 if __name__ == "__main__":
     main()

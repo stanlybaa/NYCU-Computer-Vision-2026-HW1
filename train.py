@@ -91,7 +91,7 @@ def count_parameters(model: nn.Module) -> None:
 # Main Training Logic
 # ==========================================
 def main():
-    print(f"🚀 Initializing training pipeline on device: {DEVICE}")
+    print(f"Initializing training pipeline on device: {DEVICE}")
 
     train_transform = transforms.Compose([
         transforms.RandomResizedCrop(224),
