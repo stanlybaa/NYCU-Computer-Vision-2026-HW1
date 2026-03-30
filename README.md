@@ -1,4 +1,4 @@
-# NYCU Computer Vision 2026 - HW1 📸
+# NYCU Computer Vision 2026 - HW1 
 
 ## Introduction
 This repository contains the source code for Homework 1 of the NYCU Computer Vision course. The goal of this project is to build a robust image classification pipeline for a 100-class dataset. 
@@ -22,9 +22,9 @@ Please ensure your data directory is structured as follows before running the sc
 ```text
 cv_hw1/
 ├── data/
-│   ├── train/       # Training images (organized by class folders)
-│   ├── val/         # Validation images (organized by class folders)
-│   └── test/        # Test images (flat folder for inference)
+│   ├── train/       # Training images 
+│   ├── val/         # Validation images 
+│   └── test/        # Test images 
 ├── train.py
 ├── inference.py
 ├── requirements.txt
@@ -56,3 +56,7 @@ python inference.py
 * **Model Architecture**: ResNet101
 * **Model Size**: ~42.50 M parameters
 * **Key Techniques**: Mixup + CutMix + RandAugment + 10-Crop TTA
+
+### CodaBench Leaderboard
+![CodaBench Leaderboard](leaderboard.png)
+
